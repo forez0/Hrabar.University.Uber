@@ -1,11 +1,12 @@
 const router = require("express").Router();
 const passport = require("passport");
 
-router.get("/login/succes", (req, res) => {
-    if (req.use){
+router.get("/login/success", (req, res) => {
+    if (req.user){
         res.status(200).json({
             error: false,
-            message: "Loged in Succesfully",
+            message: "Logged in Successfully",
+            user: req.user,
         });
     } else {
         res.status(403).json({ error: true, message: "Not Authorized"});
@@ -26,3 +27,17 @@ router.get(
         failureRedirect: "/login/failure",
     })
 );
+
+router.get("/google", passport.authenticate("google", ["profile", "email"]));
+
+router.get("/logout", (req, res) => {
+    req.logout();
+    res.redirect(process.env.CLIENT_URL);
+});
+
+router.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ error: true, message: "Internal Server Error" });
+});
+
+module.exports = router;
