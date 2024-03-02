@@ -3,6 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const passport = require("passport");
 const cookieSession = require("cookie-session");
+const passportSetup = require("./passport");
+const app = express();
 
 // importing dotenv module for accesing and enviroment variables//
 
