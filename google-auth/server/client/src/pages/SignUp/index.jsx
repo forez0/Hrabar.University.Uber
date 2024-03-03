@@ -12,7 +12,7 @@ function SignUp() {
         <div className={styles.container}>
                 <h1 className={styles.heading}>Sign Up</h1>
                 <div className={styles.form_container}>
-                    <div className={styles/left}>
+                    <div className={styles.left}>
                         <img className={styles.img} src="./images/signup.jpeg" alt="sigup" />
                     </div>
                     <div className={styles.right}>

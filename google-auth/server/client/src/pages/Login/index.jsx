@@ -12,7 +12,7 @@ function Login() {
         <div className={styles.container}>
                 <h1 className={styles.heading}>Log in</h1>
                 <div className={styles.form_container}>
-                    <div className={styles/left}>
+                    <div className={styles.left}>
                         <img className={styles.img} src="./images/login.jpeg" alt="login" />
                     </div>
                     <div className={styles.right}>
