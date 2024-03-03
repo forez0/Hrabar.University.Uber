@@ -20,7 +20,7 @@ function Login() {
                        <input type="text" className={styles.input} placeholder="email"/>
                        <input type="text" className={styles.input} placeholder="password"/>
                        <button className={styles.btn}>Log in</button>
-                       <p className={steles.text}>or</p>
+                       <p className={styles.text}>or</p>
                        <button className={styles.google_btn} onClick={googleAuth}>
                         <img src="./images/google_icon.png" alt="google icon" />
                         <span>Sign in with Google</span>
