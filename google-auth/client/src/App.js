@@ -11,7 +11,7 @@ function App() {
 
   const getUser = async () => {
     try{
-      const url = `${process.env.REACR_APP_API_URL}/auth/login/success`;
+      const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
       const data = await axios.get(url, {withCredentials: true});
       setUser(data.user._json);
     }catch (err) {
