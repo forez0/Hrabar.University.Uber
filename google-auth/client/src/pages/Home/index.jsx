@@ -5,7 +5,7 @@ function Home(userDetails) {
     const logout = () => {
         window.open(
             `${process.env.REACT_APP_API_URL}/auth/logout`,
-            "self"
+            "_self"
         );
     };
     return (
@@ -16,7 +16,7 @@ function Home(userDetails) {
                         <img className={styles.img} src="./images/profile.jpeg" alt="profile" />
                     </div>
                     <div className={styles.right}>
-                       <h2 className={styles.form_heading}>Profile</h2>
+                       <h2 className={styles.from_heading}>Profile</h2>
                        <img className={styles.profile_img} src={user.picture} alt="profile" />
                        <input type="text" defaultValue={user.name} className={styles.input} placeholder="username"/>
                        <input type="text" defaultValue={user.email} className={styles.input} placeholder="email"/>

@@ -1,11 +1,11 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
 function Login() {
     const googleAuth = () => {
         window.open(
             `${process.env.REACT_APP_API_URL}/auth/google/callback`,
-            "self"
+            "_self"
         );
     };
     return (
@@ -16,7 +16,7 @@ function Login() {
                         <img className={styles.img} src="./images/login.jpeg" alt="login" />
                     </div>
                     <div className={styles.right}>
-                       <h2 className={styles.form_heading}>Log in Form</h2>
+                       <h2 className={styles.from_heading}>Log in Form</h2>
                        <input type="text" className={styles.input} placeholder="email"/>
                        <input type="text" className={styles.input} placeholder="password"/>
                        <button className={styles.btn}>Log in</button>
