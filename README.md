@@ -25,5 +25,5 @@ Add your task decomposition here.
 
 ## Anti-Lab 2
 - Nemyrka Denys
-- https://github.com/forez0/Nemyrka.University.Booking
-- https://github.com/forez0/Hrabar.University.Uber/pull/1
+- My repository: https://github.com/forez0/Nemyrka.University.Booking
+- My pull request: https://github.com/forez0/Hrabar.University.Uber/pull/1
