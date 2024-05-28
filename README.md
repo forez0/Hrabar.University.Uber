@@ -24,6 +24,6 @@ Add your task decomposition here.
 - Set up Continuous Integration/Continuous Delivery pipeline
 
 ## Anti-Lab 2
-Nemyrka Denys
-https://github.com/forez0/Nemyrka.University.Booking
-https://github.com/forez0/Hrabar.University.Uber/pull/1
+- Nemyrka Denys
+- https://github.com/forez0/Nemyrka.University.Booking
+- https://github.com/forez0/Hrabar.University.Uber/pull/1
